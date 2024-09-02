@@ -164,6 +164,14 @@ body {
     color: white;
     display: flex;
 }
+.cart-count {
+    position: absolute;
+   
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 16px;
+}
 .cart_quantity_count{
     margin-top: 16px;
     /* background-color: red; */
@@ -210,7 +218,10 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
   }
-  
+  .product-button.added {
+    background-color: gray; /* Change color for added state */
+    color: white; /* Change text color for added state */
+}
   .product-button:hover {
     background-color: #45a049;
   }
