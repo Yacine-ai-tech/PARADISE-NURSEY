@@ -160,18 +160,34 @@ body {
     width: 650px;
     font-size: 19px;
 }
-.cart{
-    color: white;
-    display: flex;
+/* Ensure the parent container of the SVG icon is relative */
+.nav-actions {
+    position: relative;
 }
+
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart svg {
+    display: block; /* Make sure the SVG is treated as a block element */
+}
+
 .cart-count {
     position: absolute;
-   
-    color: white;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%); /* Center the count on the SVG */
+     color: white;
     border-radius: 50%;
     padding: 5px 10px;
     font-size: 16px;
+    text-align: center;
 }
+
 .cart_quantity_count{
     margin-top: 16px;
     /* background-color: red; */
